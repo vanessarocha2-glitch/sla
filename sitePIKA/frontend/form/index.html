@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <title>Formulário</title>
+</head>
+</style>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Criar Uma Conta</h2>
+    </div>
+
+    <form id="form" class="form">
+      <div class="form-control">
+        <label for="username">Nome de usuário</label>
+        <input type="text" id="username" placeholder="Digite seu nome de usuário..." />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Digite seu email.." />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+
+
+      <div class="form-control">
+        <label>Tipo de Pessoa</label>
+
+        <select class="box" id="tipo" onchange="mostrarCampo()">
+          <option value="00">Escolher</option>
+          <option value="pf">Pessoa Física</option>
+          <option value="pj">Pessoa Jurídica</option>
+
+        </select>
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+
+
+      <div class="form-control" id="campoCpf">
+        <Label id="tipo1">Pessoa Física</Label>
+        <input type="text" id="cpf" placeholder="Digite seu CPF" />
+        <small></small>
+
+      </div>
+
+
+      <div class="form-control" id="campoCnpj">
+        <Label>Pessoa Jurídica</Label>
+        <input type="text" id="cnpj" placeholder="Digite seu CNPJ" />
+        <small></small>
+      </div>
+
+
+      <div class="form-control">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Digite sua senha..." />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+
+      <div class="form-control">
+        <label for="password-confirmation">Confirmação de senha</label>
+        <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente..." />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  
+  <script src="scripts.js"></script>
+</body>
+
+</html>

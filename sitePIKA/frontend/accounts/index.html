@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../accounts/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="wrapper">
+        <header class="page-header">
+          <div>
+            <h1>contas cadastradas</h1>
+            <p>veja os usuarios que acabaram de se increver pelo formulario</p>
+          </div>
+          <div class="actions">
+            <a class="button" href="../form/index.html">nova conta</a>
+            <button id="refresh-accounts" class="button secondary">Recarregar</button>
+          </div>
+        </header>
+      
+    
+      <div id="status" class="status hidden"></div>
+    
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Tipo</th>
+              <th>Documentos</th>
+              <th>Criado em </th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="accounts-bodys"> </tbody>
+        </table>
+      </div>
+    </main>
+
+</body>
+</html>
